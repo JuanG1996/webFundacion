@@ -1,0 +1,29 @@
+.celular(@rules){
+    @media (max-width:768px) {
+        @rules();
+    }
+}
+
+.tablet(@rules){
+    @media (min-width:768px) {
+        @rules();
+    }
+}
+
+.laptop(@rules){
+    @media (min-width:992px) {
+        @rules();
+    }
+}
+
+.computadora(@rules){
+    @media (min-width:1200px) {
+        @rules();
+    }
+}
+
+.responsive(@medida, @rules){
+    @media (min-width: @medida) {
+        @rules();
+    }
+}
