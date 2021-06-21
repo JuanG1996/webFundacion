@@ -1,5 +1,5 @@
 .celular(@rules){
-    @media (max-width:768px) {
+    @media (max-width:767px) {
         @rules();
     }
 }
@@ -16,7 +16,7 @@
     }
 }
 
-.computadora(@rules){
+.desktop(@rules){
     @media (min-width:1200px) {
         @rules();
     }
@@ -24,6 +24,21 @@
 
 .responsive(@medida, @rules){
     @media (min-width: @medida) {
+        @rules();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.computadora(@rules){
+    @media (min-width:1200px) {
         @rules();
     }
 }

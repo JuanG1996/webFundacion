@@ -2,8 +2,12 @@
 @import "./mixins.less";
 @import "./_animation.less";
 
-//Home
-@import "./layout/home/header.less";
+//Layout
+@import "./layout/header.less";
+@import "./layout/row-3.less";
+@import "./layout/galeria-row.less";
+@import "./layout/footer.less";
+@import "./layout/historias-finalfeliz.less";
 
 
 body{
@@ -16,6 +20,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: @fuente__primaria;
 }
 
 .contenedor-100vh{
@@ -32,4 +37,9 @@ body{
     .tablet({
         padding: 20px 100px;
     })
+}
+
+.container-fluid{
+    width: 100;
+    max-width: 100%;
 }
