@@ -1,0 +1,23 @@
+.seccion-info{
+    display: flex;
+    flex-direction: column;
+    
+    .tablet({
+        flex-direction: row;
+    });
+    .info-texto{
+        display: inline-block;
+        background-color: @fondo__color-primario;
+        padding: 15px;
+
+        p{
+            font-size: @font-size__chico;
+            
+            .desktop({
+                font-size: @font-size__mediano;
+
+            });
+        }
+    }
+
+}

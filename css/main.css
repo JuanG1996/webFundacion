@@ -531,6 +531,251 @@
 .copyright .highlight {
   color: sandybrown;
 }
+.seccion-info {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .seccion-info {
+    flex-direction: row;
+  }
+}
+.seccion-info .info-texto {
+  display: inline-block;
+  background-color: #f3f3f3;
+  padding: 15px;
+}
+.seccion-info .info-texto p {
+  font-size: 15px;
+}
+@media (min-width: 1200px) {
+  .seccion-info .info-texto p {
+    font-size: 25px;
+  }
+}
+.lista-cuadro {
+  width: 100%;
+}
+.lista-cuadro .wrapper .banner,
+.lista-cuadro .wrapper .informacion {
+  width: 100%;
+  min-height: 300px;
+}
+.lista-cuadro .wrapper .banner {
+  width: 100%;
+  height: 300px;
+  background-image: url("../../img/lista/gatos-fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.lista-cuadro .wrapper .informacion {
+  background-color: #343434;
+  position: relative;
+  padding-top: 300px;
+}
+@media (min-width: 580px) {
+  .lista-cuadro .wrapper .informacion {
+    padding-top: 200px;
+  }
+}
+.lista-cuadro .wrapper .informacion ul {
+  width: 80%;
+  min-height: 300px;
+  background-color: #343434;
+  -webkit-box-shadow: 2px 7px 16px 3px #000000;
+  box-shadow: 2px 7px 16px 3px #000000;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  list-style: none;
+  border-radius: 3px;
+}
+@media (min-width: 900px) {
+  .lista-cuadro .wrapper .informacion ul {
+    width: 800px;
+  }
+}
+.lista-cuadro .wrapper .informacion ul li {
+  padding-bottom: 10px;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  width: 100%;
+  font-family: 'Allerta', sans-serif;
+}
+.lista-cuadro .wrapper .informacion ul li.fas {
+  padding-left: 30px;
+  margin-top: 10px;
+  font-family: "Font Awesome 5 Free";
+}
+.lista-cuadro .wrapper .informacion ul li.fas::before {
+  content: "\f00c";
+  left: 0;
+  top: 0;
+  position: absolute;
+  color: #fdd048;
+}
+.lista-cuadro .wrapper .informacion ul .title {
+  text-align: center;
+  color: #fdd048;
+  font-size: 25px;
+  font-weight: bold;
+}
+.lista-cuadro .wrapper .informacion ul p {
+  text-align: center;
+  color: #fdd048;
+  font-size: 18px;
+}
+.lista-cuadro .wrapper .informacion .metodo {
+  width: 100%;
+  min-height: 200px;
+  text-align: center;
+}
+.lista-cuadro .wrapper .informacion .metodo .title {
+  color: #fdd048;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.lista-cuadro .wrapper .informacion .metodo p {
+  color: white;
+  font-size: 18px;
+}
+.lista-cuadro .wrapper .informacion .metodo p strong {
+  color: #fdd048;
+}
+.lista-cuadro .wrapper .informacion .metodo p img {
+  width: 50px;
+}
+@media (min-width: 631px) {
+  .lista-cuadro .wrapper .informacion .metodo .title {
+    font-size: 35px;
+  }
+  .lista-cuadro .wrapper .informacion .metodo p {
+    color: white;
+    font-size: 20px;
+  }
+  .lista-cuadro .wrapper .informacion .metodo p img {
+    width: 100px;
+  }
+}
+.adicional-container {
+  background-color: #343434;
+  padding: 10px;
+}
+@media (min-width: 860px) {
+  .adicional-container {
+    padding: 50px;
+  }
+}
+.adicional-container .seccion {
+  width: 90%;
+  padding: 20px;
+  margin: 50px auto;
+  margin-bottom: 150px;
+  -webkit-box-shadow: 2px 7px 16px 3px #000000;
+  box-shadow: 2px 7px 16px 3px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.adicional-container .seccion:last-of-type {
+  margin-bottom: 50px;
+}
+.adicional-container .seccion .title {
+  font-size: 30px;
+  color: #fdd048;
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+}
+.adicional-container .seccion .title::before {
+  content: "";
+  width: 40%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fdd048;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.adicional-container .seccion p {
+  font-size: 16px;
+  text-align: center;
+  color: #f3f3f3;
+}
+@media (min-width: 860px) {
+  .adicional-container .seccion {
+    width: 700px;
+  }
+  .adicional-container .seccion p {
+    font-size: 25px;
+  }
+}
+.seccion-esterilizacion {
+  padding: 20px;
+  background-color: #343434;
+}
+.seccion-esterilizacion p.title {
+  color: #FC6565;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+.seccion-esterilizacion p.subtitle {
+  color: #fdd048;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.seccion-esterilizacion p {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.seccion-esterilizacion p strong {
+  color: #97befb;
+}
+.requisitos {
+  padding: 50px 20px;
+  background-color: #669FF9;
+}
+.requisitos .listado {
+  width: 100%;
+  text-align: center;
+  padding: 40px 10px 30px 10px;
+}
+.requisitos h2 {
+  color: #343434;
+  font-size: 42px;
+  text-align: center;
+}
+.requisitos ul {
+  list-style: none;
+  margin: 0 auto;
+  display: inline-block;
+}
+.requisitos ul li {
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.requisitos .aviso {
+  text-align: center;
+  font-size: 25px;
+  color: #fdd048;
+}
+.requisitos .aviso ul li {
+  color: #343434;
+  text-align: left;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f3f3f3;
   padding: 0;
@@ -560,4 +805,32 @@ body {
 .container-fluid {
   width: 100;
   max-width: 100%;
+}
+.contacto-wp {
+  width: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  z-index: 2000;
+}
+.contacto-wp img {
+  width: 70%;
+}
+.contacto-wp span {
+  background-color: #f3f3f3;
+  font-size: 10px;
+  color: #343434;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+@media (min-width: 500px) {
+  .contacto-wp {
+    width: 100px;
+  }
+  .contacto-wp span {
+    font-size: 13px;
+  }
 }

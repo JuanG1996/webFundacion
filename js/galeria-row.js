@@ -84,4 +84,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
     });
 
+    
+botonCuadro = document.querySelector("prueba-cuadro");
+cuadro = document.querySelector("prueba");
+botonCuadro.addEventListener("click", () =>{
+    cuadro.style.display = "none"; 
 });
+
+});
+
+

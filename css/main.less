@@ -8,7 +8,17 @@
 @import "./layout/galeria-row.less";
 @import "./layout/footer.less";
 @import "./layout/historias-finalfeliz.less";
+@import "./layout/row-info.less";
+@import "./layout/lista-cuadro.less";
+@import "./layout/mision-vision-apoyar.less";
+@import "./layout/esterilizaciones.less";
 
+//adoptar
+@import "./adoptar.less";
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: @fondo__color-primario;
@@ -42,4 +52,34 @@ body{
 .container-fluid{
     width: 100;
     max-width: 100%;
+}
+
+.contacto-wp{
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    z-index: 2000;
+    img{
+        width: 70%;
+    }
+
+    span{
+        background-color: @fondo__color-primario;
+        font-size: 10px;
+        color: @textos__color-primario;
+        padding: 5px;
+        border-radius: 3px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    .responsive(500px,{
+        width: 100px;
+
+        span{
+            font-size: 13px;
+        }
+    });
 }
