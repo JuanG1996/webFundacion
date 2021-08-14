@@ -22,23 +22,15 @@
     }
 }
 
+.computadora(@rules){
+    @media (min-width:1200px) {
+        @rules();
+    }
+}
+
 .responsive(@medida, @rules){
     @media (min-width: @medida) {
         @rules();
     }
 }
 
-
-
-
-
-
-
-
-
-
-.computadora(@rules){
-    @media (min-width:1200px) {
-        @rules();
-    }
-}
